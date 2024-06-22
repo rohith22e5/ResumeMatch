@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similarity Results</title>
+</head>
+<body>
+    <h1>Similarity Results</h1>
+    <p>The position most suited to your resume is for a <strong>{{ most_similar_file }}</strong> with a similarity of {{ max_similarity }}.</p>
+
+    <h2>Top Five Matches:</h2>
+    <table>
+        {% for row in data_top %}
+            <tr>
+                {% for item in row %}
+                    <td>{{ item }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Bottom Five Matches:</h2>
+    <table>
+        {% for row in data_bottom %}
+            <tr>
+                {% for item in row %}
+                    <td>{{ item }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+
+    <a href="{{ file_url }}">Download Uploaded Resume</a>
+</body>
+</html>

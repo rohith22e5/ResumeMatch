@@ -1,0 +1,20 @@
+1. Time Complexity
+Definition: Measures the amount of computational time an algorithm takes to complete as a function of the size of the input (n).
+Big O Notation: Used to express the upper bound of an algorithm's running time. Common Big O complexities include:
+O(1): Constant time
+O(log n): Logarithmic time
+O(n): Linear time
+O(n log n): Linearithmic time
+O(n^2): Quadratic time
+O(2^n): Exponential time
+O(n!): Factorial time
+Best, Average, and Worst Case: Different scenarios to consider for time complexity.
+2. Space Complexity
+Definition: Measures the amount of memory an algorithm uses relative to the input size.
+In-place Algorithms: Algorithms that use a small, constant amount of extra space (O(1) space complexity).
+Auxiliary Space: The temporary space or extra space used by an algorithm.
+3. Correctness
+Definition: Ensures that an algorithm correctly solves the problem for all possible inputs.
+Proof Techniques:
+Induction: Proving correctness by induction.
+Loop Invariants: Conditions that hold true before and after each iteration of a loop.
